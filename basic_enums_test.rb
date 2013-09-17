@@ -1,5 +1,5 @@
 gem 'minitest'
-require 'minitest'
+require 'minitest.autorun'
 require 'minitest/pride'
 
 class BasicEnumsTest < Minitest::Test
@@ -18,5 +18,13 @@ class BasicEnumsTest < Minitest::Test
     # write code here
     assert_equal 15, sum
   end
+  
+ def test_makes_hello
+    skip
+    hello = ""
+    letters =  ["h", "e", "l", "l", "o"]
+    # write code here
+    assert_equal "hello", hello
+ end
 end
 

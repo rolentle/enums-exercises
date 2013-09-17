@@ -1,5 +1,5 @@
 gem 'minitest'
-require 'minitest'
+require 'minitest/autorun'
 require 'minitest/pride'
 
 class TransformCollectionTest < Minitest::Test
@@ -45,6 +45,13 @@ class TransformCollectionTest < Minitest::Test
     names = %w(alice bob charlie david eve)
     # write code here
     assert_equal %w(ecila bob eilrahc divad eve), backwards
+  end
+
+  def test_switch_case
+    skip
+    names = %w('capslock', 'CAPSOFF', 'UpAndDown')
+    #write code here
+    asser_equal %w('CAPSLOCK', 'capsoff', 'uPaNDdOWN'), switched_cases
   end
 end
 
